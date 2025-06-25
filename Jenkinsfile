@@ -3,8 +3,7 @@ pipeline {
  stages {
  stage('Clone Repository') { // First stage: Cloning the repo
  steps {
- git branch: 'jenkins', url: 'https://github.com/SandeshRRao05/testing_repo.git' // Cloning the repo
- }
+ git branch: 'jenkins1.0', url: 'https://github.com/SandeshRRao05/testing_repo.git' // Cloning the repo }
  }
  stage('Run Script') { // Second stage: Executing the script
 steps {
