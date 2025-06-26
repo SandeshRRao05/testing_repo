@@ -1,0 +1,32 @@
+pipeline {
+ agent any
+ options {
+ preserveStashes() // Enables restarting from a failed stage
+ }
+ stages {
+ stage('Clone Repository') {
+ steps {
+ echo 'Cloning repository...'
+ git branch: 'Jenkins1.0', url: 'https://github.com/SandeshRRao05/testing_repo.git'
+ }
+ }
+ stage('Build') {
+Declarative save time
+validate the syntax
+ steps {
+ echo 'Building application...'
+ }
+ }
+ stage('Syntax Error Demo') {
+ stepa {
+ echo 'Intentional syntax error'
+ }
+ }
+ stage('Test') {
+ steps {
+ echo 'Running tests...'
+ }
+ }
+ }
+}
+

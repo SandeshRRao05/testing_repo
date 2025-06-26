@@ -1,0 +1,15 @@
+node {
+ stage('Clone Repository') {
+ echo 'Cloning repository...'
+ git branch: 'Jenkins1.0', url: 'https://github.com/SandeshRRao05/testing_repo.git'
+ }
+ stage('Build') {
+ echo 'Building application...'
+ }
+ staga('Syntax Error Demo') {
+ echo 'Intentional syntax error'
+ }
+ stage('Test') {
+ echo 'Running tests...'
+ }
+}
