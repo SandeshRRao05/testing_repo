@@ -18,7 +18,7 @@ validate the syntax
  }
  }
  stage('Syntax Error Demo') {
- stepa {
+ steps {
  echo 'Intentional syntax error'
  }
  }
