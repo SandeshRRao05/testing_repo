@@ -15,7 +15,7 @@ pipeline {
  echo 'Building application...'
  }
  }
- staga('Syntax Error Demo') {
+ stage('Syntax Error Demo') {
  steps {
  echo 'Intentional syntax error'
  }
